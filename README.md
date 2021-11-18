@@ -1,6 +1,6 @@
 # Java Final Project
-Store Management
-Team 7 - Mafia
+# Store Management
+# Team 7 - Mafia
 Team members
 1. Lộ Linh Chi
 2. Nguyễn Thị Như Ý
