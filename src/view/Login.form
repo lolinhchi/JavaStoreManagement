@@ -164,6 +164,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="X"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel2MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -262,6 +265,7 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
+<<<<<<< HEAD
         </Component>
         <Component class="javax.swing.JPasswordField" name="jPasswordField1">
           <Properties>
@@ -270,6 +274,8 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jPasswordField1ActionPerformed"/>
           </Events>
+=======
+>>>>>>> f63f82bc60f024f4f9601d7a07eb14d75f379be1
         </Component>
       </SubComponents>
     </Container>

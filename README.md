@@ -1,5 +1,6 @@
 # Java Final Project
 # Store Management
+This Application manages products, customers,Orders,products categories.
 # Team 7 - Mafia
 Team members
 1. Lộ Linh Chi

@@ -3,9 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/Admin/Desktop/JavaStoreManagement/src/view/User.java</file>
             <file>file:/C:/Users/Admin/Desktop/JavaStoreManagement/src/view/Login.java</file>
             <file>file:/C:/Users/Admin/Desktop/JavaStoreManagement/src/view/Product.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/Users/Asus%20PC/Desktop/Java_Mafia/JavaStoreManagement/src/view/HomeForm.java</file>
+            <file>file:/C:/Users/Asus%20PC/Desktop/Java_Mafia/JavaStoreManagement/src/view/User.java</file>
+            <file>file:/C:/Users/Asus%20PC/Desktop/Java_Mafia/JavaStoreManagement/src/view/Login.java</file>
+            <file>file:/C:/Users/Asus%20PC/Desktop/Java_Mafia/JavaStoreManagement/src/view/Product.java</file>
+            <file>file:/C:/Users/Asus%20PC/Desktop/Java_Mafia/JavaStoreManagement/src/view/Customer.java</file>
+            <file>file:/C:/Users/Asus%20PC/Desktop/Java_Mafia/JavaStoreManagement/src/view/Category.java</file>
+=======
+            <file>file:/E:/NetbeanProjects/StoreManagement/src/view/Product.java</file>
+>>>>>>> 3dd1f5bce8bf9e7232ea312eb47b99dd82ca7027
+>>>>>>> f63f82bc60f024f4f9601d7a07eb14d75f379be1
         </group>
     </open-files>
 </project-private>
