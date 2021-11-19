@@ -10,6 +10,8 @@ import java.sql.SQLException;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+import net.proteanit.sql.DbUtils;
 /**
  *
  * @author Lo Linh Chi
@@ -21,6 +23,7 @@ public class Product extends javax.swing.JFrame {
      */
     public Product() {
         initComponents();
+        SelectProduct();
     }
 
     Connection Con = null;
@@ -48,8 +51,8 @@ public class Product extends javax.swing.JFrame {
         ProdName = new javax.swing.JTextField();
         CatCb = new javax.swing.JComboBox<>();
         AddBtn = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        DeleteBtn = new javax.swing.JButton();
+        UpdateBtn = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         ProductTable = new javax.swing.JTable();
@@ -69,6 +72,11 @@ public class Product extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("X");
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
 
         jLabel9.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -175,21 +183,32 @@ public class Product extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(255, 0, 51));
-        jButton3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Delete");
+        DeleteBtn.setBackground(new java.awt.Color(255, 0, 51));
+        DeleteBtn.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DeleteBtn.setForeground(new java.awt.Color(255, 255, 255));
+        DeleteBtn.setText("Delete");
+        DeleteBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DeleteBtnMouseClicked(evt);
+            }
+        });
 
-        jButton4.setBackground(new java.awt.Color(255, 0, 51));
-        jButton4.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Edit");
+        UpdateBtn.setBackground(new java.awt.Color(255, 0, 51));
+        UpdateBtn.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        UpdateBtn.setForeground(new java.awt.Color(255, 255, 255));
+        UpdateBtn.setText("Edit");
+        UpdateBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                UpdateBtnMouseClicked(evt);
+            }
+        });
 
         jButton5.setBackground(new java.awt.Color(255, 0, 51));
         jButton5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("Home");
 
+        ProductTable.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         ProductTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -199,8 +218,13 @@ public class Product extends javax.swing.JFrame {
             }
         ));
         ProductTable.setIntercellSpacing(new java.awt.Dimension(0, 0));
-        ProductTable.setRowHeight(25);
+        ProductTable.setRowHeight(30);
         ProductTable.setSelectionBackground(new java.awt.Color(255, 0, 51));
+        ProductTable.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ProductTableMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(ProductTable);
 
         jLabel3.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
@@ -237,9 +261,9 @@ public class Product extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton5)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(UpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(48, 48, 48)
-                                .addComponent(jButton3)))))
+                                .addComponent(DeleteBtn)))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -269,9 +293,13 @@ public class Product extends javax.swing.JFrame {
                             .addComponent(jLabel7)
                             .addComponent(ProdQty, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(ProdDesc, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel6)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(3, 3, 3)
+                                .addComponent(ProdDesc)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
@@ -279,12 +307,12 @@ public class Product extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(AddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(DeleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(UpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(25, 25, 25)
                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addGap(63, 63, 63)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -303,12 +331,12 @@ public class Product extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-public void SelectMed(){
+public void SelectProduct(){
     try {
         Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
         St = Con.createStatement();
         Rs = St.executeQuery("select * from PRODUCTTBL");
-        ProductTable.setModel(dataModel);
+        ProductTable.setModel(DbUtils.resultSetToTableModel(Rs));
         
     } catch (SQLException e) {
         e.printStackTrace();
@@ -339,11 +367,68 @@ public void SelectMed(){
             int row = add.executeUpdate();
             JOptionPane.showMessageDialog(this, "Product successfully added");
             Con.close();
+            SelectProduct();
         } catch (SQLException e) 
         {
             e.printStackTrace();
         }
     }//GEN-LAST:event_AddBtnMouseClicked
+
+    private void DeleteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeleteBtnMouseClicked
+        
+        if(ProdId.getText().isEmpty()){
+            JOptionPane.showMessageDialog(this, "Enter the product you want to delete");
+        }
+        else{
+            try {
+                Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
+                String Id = ProdId.getText();
+                String query = "Delete from User1.PRODUCTTBL where PRODID = " + Id;
+                Statement Add = Con.createStatement();
+                Add.executeUpdate(query);
+                SelectProduct();
+                JOptionPane.showMessageDialog(this, "Product successfully deleted");
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }//GEN-LAST:event_DeleteBtnMouseClicked
+
+    
+    private void ProductTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProductTableMouseClicked
+        
+        DefaultTableModel model = (DefaultTableModel)ProductTable.getModel();
+        int myIndex = ProductTable.getSelectedRow();
+        ProdId.setText(model.getValueAt(myIndex, 0).toString());
+        ProdName.setText(model.getValueAt(myIndex, 1).toString());
+        ProdQty.setText(model.getValueAt(myIndex, 2).toString());
+        ProdDesc.setText(model.getValueAt(myIndex, 3).toString());
+    }//GEN-LAST:event_ProductTableMouseClicked
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        
+        System.exit(0);
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void UpdateBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UpdateBtnMouseClicked
+        if(ProdId.getText().isEmpty()|| ProdName.getText().isEmpty()|| ProdQty.getText().isEmpty()|| ProdDesc.getText().isEmpty()){
+            JOptionPane.showMessageDialog(this, "Missing object to update");
+        }
+        else{
+            try {
+                Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
+                String upDateQuery = "Update User1.PRODUCTTBL set PRODNAME='"+ProdName.getText()+"'" + ",PRODQTY="+ProdQty.getText()+ "" 
+                        + ",PRODDESC='" +ProdDesc.getText()+"'" + ",PRODCAT='"+ CatCb.getSelectedItem().toString()+"'"
+                        + "where PRODID="+ ProdId.getText();
+                Statement add = Con.createStatement();
+                add.executeUpdate(upDateQuery);
+                JOptionPane.showMessageDialog(this, "Product edited successfully");
+                SelectProduct();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }//GEN-LAST:event_UpdateBtnMouseClicked
 
     /**
      * @param args the command line arguments
@@ -383,13 +468,13 @@ public void SelectMed(){
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AddBtn;
     private javax.swing.JComboBox<String> CatCb;
+    private javax.swing.JButton DeleteBtn;
     private javax.swing.JTextField ProdDesc;
     private javax.swing.JTextField ProdId;
     private javax.swing.JTextField ProdName;
     private javax.swing.JTextField ProdQty;
     private javax.swing.JTable ProductTable;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton UpdateBtn;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
