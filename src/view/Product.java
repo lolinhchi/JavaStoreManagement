@@ -207,6 +207,11 @@ public class Product extends javax.swing.JFrame {
         jButton5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("Home");
+        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton5MouseClicked(evt);
+            }
+        });
 
         ProductTable.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         ProductTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -429,6 +434,11 @@ public void SelectProduct(){
             }
         }
     }//GEN-LAST:event_UpdateBtnMouseClicked
+
+    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
+        new Login().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton5MouseClicked
 
     /**
      * @param args the command line arguments
