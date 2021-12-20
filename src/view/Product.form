@@ -64,9 +64,9 @@
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="ProdDesc" pref="212" max="32767" attributes="0"/>
                               <Component id="ProdQty" pref="212" max="32767" attributes="0"/>
-                              <Component id="ProdId" pref="212" max="32767" attributes="0"/>
                               <Component id="ProdName" pref="212" max="32767" attributes="0"/>
                               <Component id="CatCb" alignment="0" max="32767" attributes="0"/>
+                              <Component id="ProdId" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">

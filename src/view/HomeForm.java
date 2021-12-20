@@ -95,35 +95,30 @@ public class HomeForm extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        homeUser.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\user.png")); // NOI18N
         homeUser.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeUserMouseClicked(evt);
             }
         });
 
-        homeProduct.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\product.png")); // NOI18N
         homeProduct.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeProductMouseClicked(evt);
             }
         });
 
-        homeOrder.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\order.png")); // NOI18N
         homeOrder.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeOrderMouseClicked(evt);
             }
         });
 
-        homeCategory.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\category.png")); // NOI18N
         homeCategory.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeCategoryMouseClicked(evt);
             }
         });
 
-        homeCustomer.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\customer.png")); // NOI18N
         homeCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeCustomerMouseClicked(evt);
@@ -133,6 +128,11 @@ public class HomeForm extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 0, 51));
         jLabel9.setText("CATEGORY");
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
 
         jLabel10.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 0, 51));
@@ -304,6 +304,10 @@ public class HomeForm extends javax.swing.JFrame {
         new Login().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_logOutBtnMouseClicked
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        // T add your handling code here:
+    }//GEN-LAST:event_jLabel9MouseClicked
 
     /**
      * @param args the command line arguments
