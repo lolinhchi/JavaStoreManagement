@@ -301,7 +301,7 @@ public class Customer extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
-        new Login().setVisible(true);
+        new HomeForm().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton5MouseClicked
 
@@ -314,20 +314,7 @@ public class Customer extends javax.swing.JFrame {
     }//GEN-LAST:event_CustomerTableMouseClicked
 
     private void AddBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddBtnMouseClicked
-        try {
-            Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
-            PreparedStatement add = Con.prepareStatement("insert into CUSTOMERTBL values(?,?,?)");
-            add.setInt(1, Integer.valueOf(CusID.getText()));
-            add.setString(2, CusName.getText());
-            add.setString(3, CusPhone.getText());
-            int row = add.executeUpdate();
-            JOptionPane.showMessageDialog(this, "Customer successfully added");
-            Con.close();
-            SelectCustomer();
-        } catch (SQLException e) 
-        {
-            e.printStackTrace();
-        }
+    
     }//GEN-LAST:event_AddBtnMouseClicked
 
     private void EditBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EditBtnMouseClicked
@@ -340,7 +327,7 @@ public class Customer extends javax.swing.JFrame {
                 String upDateQuery = "Update User1.CUSTOMERTBL set CUSNAME='"+CusName.getText() + "'" + ",CUSPHONE='"+CusPhone.getText()+"'"+"where CUSID="+ CusID.getText();
                 Statement add = Con.createStatement();
                 add.executeUpdate(upDateQuery);
-                JOptionPane.showMessageDialog(this, "Category edited successfully");
+                JOptionPane.showMessageDialog(this, "Customer edited successfully");
                 SelectCustomer();
             } catch (Exception e) {
                 e.printStackTrace();

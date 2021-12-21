@@ -4,6 +4,9 @@
  */
 package storemanagement;
 
+import view.LoadFirst;
+
+
 /**
  *
  * @author Lo Linh Chi
@@ -14,7 +17,7 @@ public class StoreManagement {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       //new LoadFirst().setVisible(true);
     }
     
 }
