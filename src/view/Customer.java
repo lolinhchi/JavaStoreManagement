@@ -301,7 +301,7 @@ public class Customer extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
-        new Login().setVisible(true);
+        new HomeForm().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton5MouseClicked
 
@@ -340,7 +340,7 @@ public class Customer extends javax.swing.JFrame {
                 String upDateQuery = "Update User1.CUSTOMERTBL set CUSNAME='"+CusName.getText() + "'" + ",CUSPHONE='"+CusPhone.getText()+"'"+"where CUSID="+ CusID.getText();
                 Statement add = Con.createStatement();
                 add.executeUpdate(upDateQuery);
-                JOptionPane.showMessageDialog(this, "Category edited successfully");
+                JOptionPane.showMessageDialog(this, "Customer edited successfully");
                 SelectCustomer();
             } catch (Exception e) {
                 e.printStackTrace();

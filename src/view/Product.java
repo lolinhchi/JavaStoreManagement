@@ -3,15 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package view;
-import java.sql.Statement;
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import net.proteanit.sql.DbUtils;
+import jdbc.ConnectionDB;
 /**
  *
  * @author Lo Linh Chi
@@ -24,12 +21,9 @@ public class Product extends javax.swing.JFrame {
     public Product() {
         initComponents();
         SelectProduct();
+        GetCat();
     }
-
-    Connection Con = null;
-    Statement St = null;
-    ResultSet Rs = null;
-
+    ConnectionDB conn = new ConnectionDB();
     
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -89,7 +83,7 @@ public class Product extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(298, 298, 298)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 284, Short.MAX_VALUE)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
@@ -102,7 +96,7 @@ public class Product extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
@@ -171,7 +165,6 @@ public class Product extends javax.swing.JFrame {
 
         CatCb.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         CatCb.setForeground(new java.awt.Color(255, 0, 51));
-        CatCb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         AddBtn.setBackground(new java.awt.Color(255, 0, 51));
         AddBtn.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
@@ -337,12 +330,18 @@ public class Product extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
 public void SelectProduct(){
+   String query = "select * from PRODUCTTBL";
+   conn.showDataTable(query, ProductTable);
+}
+private void GetCat(){
     try {
-        Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
-        St = Con.createStatement();
-        Rs = St.executeQuery("select * from PRODUCTTBL");
-        ProductTable.setModel(DbUtils.resultSetToTableModel(Rs));
-        
+
+        String query = "select * from User1.CATEGORYTBL";
+        ResultSet rS = conn.getData(query);
+        while(rS.next()){
+            String myCat = rS.getString("CATNAME");
+            CatCb.addItem(myCat);
+        }
     } catch (SQLException e) {
         e.printStackTrace();
     }
@@ -360,10 +359,10 @@ public void SelectProduct(){
     }//GEN-LAST:event_ProdNameActionPerformed
 
     private void AddBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddBtnMouseClicked
-        
+        String query = "insert into PRODUCTTBL values(?,?,?,?,?)";
+        conn.getConnectDB();
+        PreparedStatement add = conn.addData(query);
         try {
-            Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
-            PreparedStatement add = Con.prepareStatement("insert into PRODUCTTBL values(?,?,?,?,?)");
             add.setInt(1, Integer.valueOf(ProdId.getText()));
             add.setString(2, ProdName.getText());
             add.setInt(3, Integer.valueOf(ProdQty.getText()));
@@ -371,12 +370,14 @@ public void SelectProduct(){
             add.setString(5, CatCb.getSelectedItem().toString());
             int row = add.executeUpdate();
             JOptionPane.showMessageDialog(this, "Product successfully added");
-            Con.close();
             SelectProduct();
-        } catch (SQLException e) 
-        {
-            e.printStackTrace();
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(this, "Product added failed");
+            ex.printStackTrace();
+            
         }
+        
+        
     }//GEN-LAST:event_AddBtnMouseClicked
 
     private void DeleteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeleteBtnMouseClicked
@@ -385,17 +386,11 @@ public void SelectProduct(){
             JOptionPane.showMessageDialog(this, "Enter the product you want to delete");
         }
         else{
-            try {
-                Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
-                String Id = ProdId.getText();
-                String query = "Delete from User1.PRODUCTTBL where PRODID = " + Id;
-                Statement Add = Con.createStatement();
-                Add.executeUpdate(query);
-                SelectProduct();
-                JOptionPane.showMessageDialog(this, "Product successfully deleted");
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            String Id = ProdId.getText();
+            String query = "Delete from User1.PRODUCTTBL where PRODID = " + Id;
+            conn.deleteData(query);
+            SelectProduct();
+            JOptionPane.showMessageDialog(this, "Product successfully deleted");
         }
     }//GEN-LAST:event_DeleteBtnMouseClicked
 
@@ -421,12 +416,10 @@ public void SelectProduct(){
         }
         else{
             try {
-                Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
                 String upDateQuery = "Update User1.PRODUCTTBL set PRODNAME='"+ProdName.getText()+"'" + ",PRODQTY="+ProdQty.getText()+ "" 
                         + ",PRODDESC='" +ProdDesc.getText()+"'" + ",PRODCAT='"+ CatCb.getSelectedItem().toString()+"'"
                         + "where PRODID="+ ProdId.getText();
-                Statement add = Con.createStatement();
-                add.executeUpdate(upDateQuery);
+                conn.updateData(upDateQuery);
                 JOptionPane.showMessageDialog(this, "Product edited successfully");
                 SelectProduct();
             } catch (Exception e) {
@@ -436,7 +429,7 @@ public void SelectProduct(){
     }//GEN-LAST:event_UpdateBtnMouseClicked
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
-        new Login().setVisible(true);
+        new HomeForm().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton5MouseClicked
 

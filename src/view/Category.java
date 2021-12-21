@@ -366,7 +366,7 @@ public class Category extends javax.swing.JFrame {
     }//GEN-LAST:event_EditBtnMouseClicked
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
-        new Login().setVisible(true);
+        new HomeForm().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton5MouseClicked
 
