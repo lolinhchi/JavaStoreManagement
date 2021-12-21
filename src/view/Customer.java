@@ -314,20 +314,7 @@ public class Customer extends javax.swing.JFrame {
     }//GEN-LAST:event_CustomerTableMouseClicked
 
     private void AddBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddBtnMouseClicked
-        try {
-            Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
-            PreparedStatement add = Con.prepareStatement("insert into CUSTOMERTBL values(?,?,?)");
-            add.setInt(1, Integer.valueOf(CusID.getText()));
-            add.setString(2, CusName.getText());
-            add.setString(3, CusPhone.getText());
-            int row = add.executeUpdate();
-            JOptionPane.showMessageDialog(this, "Customer successfully added");
-            Con.close();
-            SelectCustomer();
-        } catch (SQLException e) 
-        {
-            e.printStackTrace();
-        }
+    
     }//GEN-LAST:event_AddBtnMouseClicked
 
     private void EditBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EditBtnMouseClicked
