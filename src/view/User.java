@@ -11,10 +11,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-<<<<<<< HEAD
 import jdbc.ConnectionDB;
-=======
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
 import net.proteanit.sql.DbUtils;
 
 /**
@@ -31,33 +28,15 @@ public class User extends javax.swing.JFrame {
         SelectUser();
         
     }
-<<<<<<< HEAD
     ConnectionDB conn = new ConnectionDB();
     
 
 public void SelectUser(){
     String query = "select * from USERTBL";
     conn.showDataTable(query, UserTable);
-=======
-    Connection Con = null;
-    Statement St = null;
-    ResultSet Rs = null;
-    
-
-public void SelectUser(){
-    try {
-        Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
-        St = Con.createStatement();
-        Rs = St.executeQuery("select * from USERTBL");
-        UserTable.setModel(DbUtils.resultSetToTableModel(Rs));
-        
-    } catch (SQLException e) {
-        e.printStackTrace();
-    }
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
 }
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -314,119 +293,75 @@ public void SelectUser(){
 
         pack();
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
-    
-    
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+    }// </editor-fold>                        
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {                                     
 
         System.exit(0);
-    }//GEN-LAST:event_jLabel2MouseClicked
+    }                                    
 
-<<<<<<< HEAD
-=======
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-
-        System.exit(0);
-    }//GEN-LAST:event_jLabel2MouseClicked
-
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
-    private void UserTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UserTableMouseClicked
+    private void UserTableMouseClicked(java.awt.event.MouseEvent evt) {                                       
 
         DefaultTableModel model = (DefaultTableModel)UserTable.getModel();
         int myIndex = UserTable.getSelectedRow();
         userName.setText(model.getValueAt(myIndex, 0).toString());
         passWord.setText(model.getValueAt(myIndex, 1).toString());
         phone.setText(model.getValueAt(myIndex, 2).toString());
-    }//GEN-LAST:event_UserTableMouseClicked
+    }                                      
 
-    private void AddBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddBtnMouseClicked
+    private void AddBtnMouseClicked(java.awt.event.MouseEvent evt) {                                    
 
         try {
-<<<<<<< HEAD
             String query = "insert into USERTBL values(?,?,?)";
             conn.getConnectDB();
             PreparedStatement add = conn.addData(query);
-=======
-            Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
-            PreparedStatement add = Con.prepareStatement("insert into USERTBL values(?,?,?)");
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
             add.setString(1, userName.getText());
             add.setString(2, passWord.getText());
             add.setString(3, phone.getText());
             int row = add.executeUpdate();
             JOptionPane.showMessageDialog(this, "User successfully added");
-<<<<<<< HEAD
-=======
-            Con.close();
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
             SelectUser();
         } catch (SQLException e)
         {
             e.printStackTrace();
         }
-    }//GEN-LAST:event_AddBtnMouseClicked
+    }                                   
 
-    private void UpdateBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UpdateBtnMouseClicked
+    private void UpdateBtnMouseClicked(java.awt.event.MouseEvent evt) {                                       
         if(userName.getText().isEmpty()|| passWord.getText().isEmpty()|| phone.getText().isEmpty()){
             JOptionPane.showMessageDialog(this, "Missing object to update");
         }
         else{
             try {
-<<<<<<< HEAD
                 String upDateQuery = "Update User1.USERTBL set UNAME='"+userName.getText()+"'" + ",UPASS='"+passWord.getText() +"'"
                 + "where UPHONE='"+ phone.getText() +"'";
                 conn.updateData(upDateQuery);
-=======
-                Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
-                String upDateQuery = "Update User1.USERTBL set UNAME='"+userName.getText()+"'" + ",UPASS='"+passWord.getText() +"'"
-                + "where UPHONE='"+ phone.getText() +"'";
-                Statement add = Con.createStatement();
-                add.executeUpdate(upDateQuery);
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
                 JOptionPane.showMessageDialog(this, "User edited successfully");
                 SelectUser();
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
-    }//GEN-LAST:event_UpdateBtnMouseClicked
+    }                                      
 
-    private void DeleteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeleteBtnMouseClicked
+    private void DeleteBtnMouseClicked(java.awt.event.MouseEvent evt) {                                       
 
-<<<<<<< HEAD
-        
-=======
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
         if(phone.getText().isEmpty()){
             JOptionPane.showMessageDialog(this, "Enter the user you want to delete");
         }
         else{
-<<<<<<< HEAD
             String phone = this.phone.getText();
             String query = "Delete from User1.USERTBL where UPHONE = '" + phone +"'";
             conn.deleteData(query);
             SelectUser();
             JOptionPane.showMessageDialog(this, "User successfully deleted");
-=======
-            try {
-                Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
-                String phone = this.phone.getText();
-                String query = "Delete from User1.USERTBL where UPHONE = '" + phone +"'";
-                Statement Add = Con.createStatement();
-                Add.executeUpdate(query);
-                SelectUser();
-                JOptionPane.showMessageDialog(this, "User successfully deleted");
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
         }
-    }//GEN-LAST:event_DeleteBtnMouseClicked
+    }                                      
 
-    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
+    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {                                      
         new HomeForm().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton5MouseClicked
+    }                                     
 
     /**
      * @param args the command line arguments
@@ -454,22 +389,7 @@ public void SelectUser(){
             java.util.logging.Logger.getLogger(User.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(User.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(User.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(User.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(User.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
+
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -478,7 +398,7 @@ try {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton AddBtn;
     private javax.swing.JButton DeleteBtn;
     private javax.swing.JButton UpdateBtn;
@@ -498,5 +418,5 @@ try {
     private javax.swing.JTextField passWord;
     private javax.swing.JTextField phone;
     private javax.swing.JTextField userName;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
