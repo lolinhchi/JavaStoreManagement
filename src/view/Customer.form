@@ -24,43 +24,25 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
-<<<<<<< HEAD
 
           <EmptySpace min="0" pref="493" max="32767" attributes="0"/>
-=======
-<<<<<<< HEAD
->>>>>>> 3c1bfe0f9708f1c03db0d826a3745d858bdbc044
-=======
+
           <EmptySpace min="0" pref="493" max="32767" attributes="0"/>
->>>>>>> e7e6546d48641a91388e171dab9f15aec9fc0a8a
-=======
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
+
           <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
-<<<<<<< HEAD
 
-=======
->>>>>>> 3c1bfe0f9708f1c03db0d826a3745d858bdbc044
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
-<<<<<<< HEAD
+          <EmptySpace min="0" pref="264" max="32767" attributes="0"/>
+
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
 
           <EmptySpace min="0" pref="264" max="32767" attributes="0"/>
 
           <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
 
-=======
-<<<<<<< HEAD
-=======
-          <EmptySpace min="0" pref="264" max="32767" attributes="0"/>
->>>>>>> e7e6546d48641a91388e171dab9f15aec9fc0a8a
-=======
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
->>>>>>> 3c1bfe0f9708f1c03db0d826a3745d858bdbc044
       </Group>
     </DimensionLayout>
   </Layout>
