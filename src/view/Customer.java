@@ -317,6 +317,7 @@ public class Customer extends javax.swing.JFrame {
     }//GEN-LAST:event_CustNameActionPerformed
 
     private void AddBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddBtnMouseClicked
+<<<<<<< HEAD
 
         try {
             Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
@@ -331,6 +332,10 @@ public class Customer extends javax.swing.JFrame {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+=======
+    
+    }//GEN-LAST:event_AddBtnMouseClicked
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
 
     }//GEN-LAST:event_AddBtnMouseClicked
 

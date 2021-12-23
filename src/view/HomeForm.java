@@ -96,34 +96,69 @@ public class HomeForm extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        homeUser.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\user.png")); // NOI18N
+=======
+>>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
         homeUser.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeUserMouseClicked(evt);
             }
         });
 
+<<<<<<< HEAD
         homeProduct.setIcon(new javax.swing.ImageIcon("D:\\Công nghệ thông tin\\java\\product.png")); // NOI18N
+=======
+<<<<<<< HEAD
+        homeProduct.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\product.png")); // NOI18N
+=======
+>>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
         homeProduct.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeProductMouseClicked(evt);
             }
         });
 
+<<<<<<< HEAD
         homeOrder.setIcon(new javax.swing.ImageIcon("D:\\Công nghệ thông tin\\java\\order.png")); // NOI18N
+=======
+<<<<<<< HEAD
+        homeOrder.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\order.png")); // NOI18N
+=======
+>>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
         homeOrder.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeOrderMouseClicked(evt);
             }
         });
 
+<<<<<<< HEAD
         homeCategory.setIcon(new javax.swing.ImageIcon("D:\\Công nghệ thông tin\\java\\category.png")); // NOI18N
+=======
+<<<<<<< HEAD
+        homeCategory.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\category.png")); // NOI18N
+=======
+>>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
         homeCategory.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeCategoryMouseClicked(evt);
             }
         });
 
+<<<<<<< HEAD
         homeCustomer.setIcon(new javax.swing.ImageIcon("D:\\Công nghệ thông tin\\java\\customer.png")); // NOI18N
+=======
+<<<<<<< HEAD
+        homeCustomer.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\customer.png")); // NOI18N
+=======
+>>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
         homeCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeCustomerMouseClicked(evt);
@@ -133,6 +168,11 @@ public class HomeForm extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 0, 51));
         jLabel9.setText("CATEGORY");
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
 
         jLabel10.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 0, 51));
@@ -318,10 +358,20 @@ public class HomeForm extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_logOutBtnMouseClicked
 
+<<<<<<< HEAD
     private void homeCategory1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_homeCategory1MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_homeCategory1MouseClicked
 
+=======
+<<<<<<< HEAD
+=======
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        // T add your handling code here:
+    }//GEN-LAST:event_jLabel9MouseClicked
+
+>>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
     /**
      * @param args the command line arguments
      */

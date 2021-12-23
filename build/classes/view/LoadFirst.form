@@ -55,7 +55,13 @@
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="jLabel3" min="-2" pref="111" max="-2" attributes="0"/>
+<<<<<<< HEAD
                   <EmptySpace type="separate" max="-2" attributes="0"/>
+=======
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel5" min="-2" pref="150" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="191" max="-2" attributes="0"/>
               </Group>
@@ -83,13 +89,19 @@
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="11" max="32767" attributes="0"/>
+                          <Component id="jLabel5" min="-2" pref="90" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                           <Component id="jLabel3" min="-2" pref="90" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+<<<<<<< HEAD
                   <EmptySpace pref="69" max="32767" attributes="0"/>
+=======
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
                   <Component id="Percentage" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="MyProgress" min="-2" pref="3" max="-2" attributes="0"/>
@@ -121,11 +133,14 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
+<<<<<<< HEAD
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="D:\C&#xf4;ng ngh&#x1ec7; th&#xf4;ng tin\java\logo.png"/>
             </Property>
           </Properties>
+=======
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
         </Component>
         <Component class="javax.swing.JProgressBar" name="MyProgress">
           <Properties>
@@ -146,6 +161,13 @@
               <Color blue="33" green="0" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="%"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\Asus PC\Desktop\Java_img\logo.png"/>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>
