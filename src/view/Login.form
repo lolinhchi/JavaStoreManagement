@@ -62,7 +62,6 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
@@ -72,7 +71,7 @@
                               <Group type="102" attributes="0">
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="passWord" max="32767" attributes="0"/>
-=======
+
                           <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                           <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
@@ -81,7 +80,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel7" min="-2" pref="101" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                               </Group>
                           </Group>
                       </Group>
@@ -93,7 +92,7 @@
                   <Component id="LoginBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="ClearBtn" min="-2" pref="75" max="-2" attributes="0"/>
-<<<<<<< HEAD
+
                   <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
               </Group>
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
@@ -102,9 +101,9 @@
                       <Component id="LoginBtn" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="203" max="32767" attributes="0"/>
                   </Group>
-=======
+
                   <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
               </Group>
           </Group>
         </DimensionLayout>
@@ -116,7 +115,7 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="userName" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-<<<<<<< HEAD
+
                   </Group>
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -127,7 +126,7 @@
                   <Component id="ClearBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                   <Component id="jLabel3" min="-2" pref="90" max="-2" attributes="0"/>
-=======
+
                   </Group>
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -139,7 +138,7 @@
                       <Component id="ClearBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="LoginBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="jLabel3" min="-2" pref="122" max="-2" attributes="0"/>
@@ -172,11 +171,11 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
+
                       <EmptySpace pref="21" max="32767" attributes="0"/>
-=======
+
                       <EmptySpace pref="29" max="32767" attributes="0"/>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -294,14 +293,13 @@
           </SubComponents>
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel3">
-<<<<<<< HEAD
+
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\Lo Linh Chi\Desktop\javaimg\logo.png"/>
             </Property>
           </Properties>
-=======
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
         </Component>
         <Component class="javax.swing.JButton" name="ClearBtn">
           <Properties>
@@ -339,8 +337,7 @@
         </Component>
         <Component class="javax.swing.JPasswordField" name="passWord">
         </Component>
-<<<<<<< HEAD
-=======
+
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -349,7 +346,7 @@
             <Property name="text" type="java.lang.String" value="jLabel7"/>
           </Properties>
         </Component>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
       </SubComponents>
     </Container>
   </SubComponents>
