@@ -3,34 +3,30 @@
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-<<<<<<< HEAD
+
     <Property name="undecorated" type="boolean" value="true"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
-=======
-<<<<<<< HEAD
+
     <Property name="undecorated" type="boolean" value="true"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
-=======
-<<<<<<< HEAD
+
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
-=======
+
     <Property name="undecorated" type="boolean" value="true"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
->>>>>>> 689207b2cdec0d48e1368d3d9be811d2b97758df
+
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -47,44 +43,39 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
+
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-=======
-<<<<<<< HEAD
+
           <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
-=======
-<<<<<<< HEAD
+
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-=======
+
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 689207b2cdec0d48e1368d3d9be811d2b97758df
+
           </Group>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
+
           <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
-=======
-<<<<<<< HEAD
+
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
           </Group>
-=======
+
           <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
       </Group>
     </DimensionLayout>
   </Layout>
@@ -99,17 +90,16 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
+
               <Component id="jPanel2" max="32767" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
-=======
-<<<<<<< HEAD
+
               <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
               <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
@@ -118,7 +108,7 @@
               <Group type="102" alignment="1" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-<<<<<<< HEAD
+
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -182,7 +172,7 @@
                       <Group type="102" attributes="0">
                           <Component id="jScrollPane2" min="-2" pref="404" max="-2" attributes="0"/>
                           <EmptySpace pref="150" max="32767" attributes="0"/>
-=======
+
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
@@ -198,7 +188,7 @@
                               </Group>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
->>>>>>> 689207b2cdec0d48e1368d3d9be811d2b97758df
+
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="Custnamelbl" alignment="1" max="32767" attributes="0"/>
                               <Component id="Datelbl" min="-2" pref="185" max="-2" attributes="0"/>
@@ -208,16 +198,16 @@
                                   <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-<<<<<<< HEAD
+
                                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="Qtytb" min="-2" pref="149" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="AddToBtn" min="-2" max="-2" attributes="0"/>
-=======
+
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                   <Component id="jButton2" min="-2" max="-2" attributes="0"/>
->>>>>>> 689207b2cdec0d48e1368d3d9be811d2b97758df
+
                               </Group>
                           </Group>
                       </Group>
@@ -256,15 +246,15 @@
               </Group>
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
+
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Component id="jScrollPane2" min="-2" pref="416" max="-2" attributes="0"/>
                       <EmptySpace pref="740" max="32767" attributes="0"/>
-=======
+
                       <EmptySpace min="-2" pref="360" max="-2" attributes="0"/>
                       <Component id="CustNamelb2" min="-2" pref="235" max="-2" attributes="0"/>
                       <EmptySpace pref="457" max="32767" attributes="0"/>
-=======
+
               <Component id="jPanel2" max="32767" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
@@ -343,8 +333,7 @@
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Component id="jScrollPane2" min="-2" pref="416" max="-2" attributes="0"/>
                       <EmptySpace pref="740" max="32767" attributes="0"/>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                   </Group>
               </Group>
           </Group>
@@ -353,17 +342,15 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-<<<<<<< HEAD
+
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jScrollPane1" min="-2" pref="165" max="-2" attributes="0"/>
                       <Component id="jScrollPane2" min="-2" pref="166" max="-2" attributes="0"/>
@@ -379,11 +366,11 @@
                           <Component id="Price" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                           <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-=======
+
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> 689207b2cdec0d48e1368d3d9be811d2b97758df
+
                   </Group>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
@@ -404,11 +391,11 @@
                               <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="Datelbl" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                           </Group>
-<<<<<<< HEAD
+
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jButton5" min="-2" pref="31" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-=======
+
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="AddOrder" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -417,10 +404,9 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="HomeBtn" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
->>>>>>> 689207b2cdec0d48e1368d3d9be811d2b97758df
+
                       </Group>
-<<<<<<< HEAD
-=======
+
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                           <Component id="jScrollPane3" min="-2" pref="165" max="-2" attributes="0"/>
@@ -430,7 +416,7 @@
                               <Component id="PrintBtn" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
-=======
+
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -464,7 +450,7 @@
                           <Component id="HomeBtn" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                       </Group>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jScrollPane1" min="-2" pref="218" max="-2" attributes="0"/>
@@ -482,32 +468,23 @@
                               <Component id="sumlb" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-<<<<<<< HEAD
-=======
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                       </Group>
                   </Group>
                   <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="379" max="-2" attributes="0"/>
                       <Component id="CustNamelb2" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="211" max="-2" attributes="0"/>
-=======
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="152" max="-2" attributes="0"/>
                       <Component id="jScrollPane2" min="-2" pref="213" max="-2" attributes="0"/>
                       <EmptySpace pref="270" max="32767" attributes="0"/>
-<<<<<<< HEAD
-=======
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                   </Group>
               </Group>
           </Group>
@@ -525,29 +502,25 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
+
                       <EmptySpace min="-2" pref="454" max="-2" attributes="0"/>
-=======
-<<<<<<< HEAD
+
                       <EmptySpace min="-2" pref="350" max="-2" attributes="0"/>
-=======
+
                       <EmptySpace min="-2" pref="298" max="-2" attributes="0"/>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jLabel2" min="-2" pref="15" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
+
                       <EmptySpace min="-2" pref="512" max="-2" attributes="0"/>
-=======
-<<<<<<< HEAD
+
                       <EmptySpace min="-2" pref="389" max="-2" attributes="0"/>
-=======
+
                       <EmptySpace min="-2" pref="342" max="-2" attributes="0"/>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                       <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
@@ -560,15 +533,13 @@
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="14" max="32767" attributes="0"/>
                       <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
+
                       <EmptySpace max="-2" attributes="0"/>
-=======
-<<<<<<< HEAD
+
                       <EmptySpace max="32767" attributes="0"/>
-=======
+
                       <EmptySpace pref="14" max="32767" attributes="0"/>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jLabel2" min="-2" pref="27" max="-2" attributes="0"/>
@@ -636,10 +607,9 @@
             </DimensionLayout>
           </Layout>
         </Container>
-<<<<<<< HEAD
+
         <Component class="javax.swing.JTextField" name="Qtyfield">
-=======
-<<<<<<< HEAD
+
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -651,27 +621,24 @@
             <Property name="text" type="java.lang.String" value="OderID"/>
           </Properties>
         </Component>
-<<<<<<< HEAD
+
         <Component class="javax.swing.JTextField" name="BillId">
-=======
+
         <Component class="javax.swing.JTextField" name="ProdId">
-=======
+
         <Component class="javax.swing.JTextField" name="Qtyfield">
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
->>>>>>> 689207b2cdec0d48e1368d3d9be811d2b97758df
+
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="12" style="1"/>
             </Property>
           </Properties>
         </Component>
-<<<<<<< HEAD
+
         <Component class="javax.swing.JLabel" name="jLabel7">
-=======
-<<<<<<< HEAD
+
         <Component class="javax.swing.JTextField" name="Qtytb">
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="18" style="1"/>
@@ -682,10 +649,10 @@
             <Property name="text" type="java.lang.String" value="Date"/>
           </Properties>
         </Component>
-<<<<<<< HEAD
-=======
+
+
         <Component class="javax.swing.JLabel" name="jLabel6">
-=======
+
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -697,7 +664,7 @@
             <Property name="text" type="java.lang.String" value="Date"/>
           </Properties>
         </Component>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -810,10 +777,7 @@
           </SubComponents>
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel3">
-<<<<<<< HEAD
-=======
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="18" style="1"/>
@@ -821,24 +785,22 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="ff" type="rgb"/>
             </Property>
-<<<<<<< HEAD
+
             <Property name="text" type="java.lang.String" value="CUSTOMERS LIST"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
-=======
-<<<<<<< HEAD
+
             <Property name="text" type="java.lang.String" value="Customer"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
-=======
+
             <Property name="text" type="java.lang.String" value="CUSTOMERS LIST"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="18" style="1"/>
@@ -846,15 +808,13 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="ff" type="rgb"/>
             </Property>
-<<<<<<< HEAD
+
             <Property name="text" type="java.lang.String" value="PRODUCT LIST"/>
-=======
-<<<<<<< HEAD
+
             <Property name="text" type="java.lang.String" value="Quantity"/>
-=======
+
             <Property name="text" type="java.lang.String" value="PRODUCT LIST"/>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
@@ -865,12 +825,11 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="ff" type="rgb"/>
             </Property>
-<<<<<<< HEAD
+
             <Property name="text" type="java.lang.String" value="CustomerName"/>
-=======
-<<<<<<< HEAD
+
             <Property name="text" type="java.lang.String" value="Date"/>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="Custnamelbl">
@@ -892,11 +851,11 @@
             <Property name="text" type="java.lang.String" value="OrderID"/>
           </Properties>
         </Component>
-<<<<<<< HEAD
+
         <Component class="javax.swing.JButton" name="AddToBtn">
-=======
+
         <Component class="javax.swing.JLabel" name="Datelbl">
->>>>>>> 689207b2cdec0d48e1368d3d9be811d2b97758df
+
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="14" style="1"/>
@@ -904,11 +863,11 @@
             <Property name="text" type="java.lang.String" value="Date"/>
           </Properties>
         </Component>
-<<<<<<< HEAD
+
         <Component class="javax.swing.JButton" name="jButton2">
-=======
+
         <Component class="javax.swing.JButton" name="jButton5">
-=======
+
             <Property name="text" type="java.lang.String" value="CustomerName"/>
           </Properties>
         </Component>
@@ -930,13 +889,12 @@
             </Property>
             <Property name="text" type="java.lang.String" value="OrderID"/>
           </Properties>
-<<<<<<< HEAD
+
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="AddToBtnMouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddToBtnActionPerformed"/>
           </Events>
-=======
->>>>>>> 689207b2cdec0d48e1368d3d9be811d2b97758df
+
         </Component>
         <Component class="javax.swing.JLabel" name="Datelbl">
           <Properties>
@@ -947,8 +905,7 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="jButton2">
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="ff" type="rgb"/>
@@ -959,12 +916,11 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-<<<<<<< HEAD
+
             <Property name="text" type="java.lang.String" value="View Orders"/>
-=======
-<<<<<<< HEAD
+
             <Property name="text" type="java.lang.String" value="Home"/>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="AddOrder">
@@ -989,22 +945,21 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="ff" type="rgb"/>
             </Property>
-<<<<<<< HEAD
-=======
+
             <Property name="text" type="java.lang.String" value="Amount"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="Datelbl">
           <Properties>
-=======
+
             <Property name="text" type="java.lang.String" value="View Orders"/>
           </Properties>
         </Component>
-<<<<<<< HEAD
+
         <Component class="javax.swing.JLabel" name="TotAmtbl">
-=======
+
         <Component class="javax.swing.JButton" name="AddOrder">
->>>>>>> 689207b2cdec0d48e1368d3d9be811d2b97758df
+
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="ff" type="rgb"/>
@@ -1026,18 +981,16 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="ff" type="rgb"/>
             </Property>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="14" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-<<<<<<< HEAD
+
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
-=======
-<<<<<<< HEAD
+
               <Color blue="33" green="33" red="ff" type="rgb"/>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
             </Property>
             <Property name="text" type="java.lang.String" value="Home"/>
           </Properties>
@@ -1045,8 +998,7 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="HomeBtnMouseClicked"/>
           </Events>
         </Component>
-<<<<<<< HEAD
-=======
+
         <Container class="javax.swing.JScrollPane" name="jScrollPane2">
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -1106,7 +1058,7 @@
             </Component>
           </SubComponents>
         </Container>
-=======
+
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Home"/>
@@ -1115,8 +1067,7 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="HomeBtnMouseClicked"/>
           </Events>
         </Component>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
         <Container class="javax.swing.JScrollPane" name="jScrollPane3">
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -1124,43 +1075,38 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-<<<<<<< HEAD
+
             <Component class="javax.swing.JTable" name="BillTb">
-=======
-<<<<<<< HEAD
+
             <Component class="javax.swing.JTable" name="BillTable">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Century Gothic" size="15" style="1"/>
-=======
-<<<<<<< HEAD
+
             <Component class="javax.swing.JTable" name="ProductTable2">
->>>>>>> 689207b2cdec0d48e1368d3d9be811d2b97758df
+
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Century Gothic" size="18" style="1"/>
-=======
+
             <Component class="javax.swing.JTable" name="BillTable">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Century Gothic" size="15" style="1"/>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                 </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="5" rowCount="0">
                     <Column editable="true" title="Num" type="java.lang.Object"/>
                     <Column editable="true" title="Product" type="java.lang.Object"/>
                     <Column editable="true" title="Quantity" type="java.lang.Object"/>
-<<<<<<< HEAD
+
                     <Column editable="true" title="Price" type="java.lang.Object"/>
-=======
-<<<<<<< HEAD
+
                     <Column editable="true" title="Uprice" type="java.lang.Object"/>
-=======
+
                     <Column editable="true" title="Price" type="java.lang.Object"/>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                     <Column editable="true" title="Total" type="java.lang.Object"/>
                   </Table>
                 </Property>
@@ -1193,9 +1139,7 @@
                     </Column>
                   </TableColumnModel>
                 </Property>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
                 <Property name="intercellSpacing" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[0, 0]"/>
                 </Property>
@@ -1203,26 +1147,22 @@
                 <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="0" red="ff" type="rgb"/>
                 </Property>
-=======
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BillTbMouseClicked"/>
               </Events>
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
             </Component>
           </SubComponents>
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel14">
           <Properties>
-=======
+
             </Component>
           </SubComponents>
         </Container>
@@ -1249,7 +1189,7 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="ff" type="rgb"/>
             </Property>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
+
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="18" style="1"/>
             </Property>
@@ -1275,7 +1215,7 @@
               <Font name="Century Gothic" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-<<<<<<< HEAD
+
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="AddtoOrder"/>
@@ -1290,9 +1230,7 @@
               <Font name="Century Gothic" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-=======
-<<<<<<< HEAD
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
               <Color blue="33" green="0" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Quantity"/>
@@ -1307,12 +1245,11 @@
         </Component>
         <Component class="javax.swing.JButton" name="printBtn">
           <Properties>
-<<<<<<< HEAD
+
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="ff" type="rgb"/>
             </Property>
-=======
-=======
+
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="AddtoOrder"/>
@@ -1344,13 +1281,12 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="ff" type="rgb"/>
             </Property>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="14" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-<<<<<<< HEAD
+
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Print"/>
@@ -1368,12 +1304,11 @@
               <Color blue="33" green="0" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Amount"/>
-=======
-<<<<<<< HEAD
+
               <Color blue="33" green="0" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="CustName"/>
-=======
+
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Print"/>
@@ -1391,8 +1326,7 @@
               <Color blue="33" green="0" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Amount"/>
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="Price">
