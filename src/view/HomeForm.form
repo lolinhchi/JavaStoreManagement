@@ -227,66 +227,61 @@
           </SubComponents>
         </Container>
         <Component class="javax.swing.JLabel" name="homeUser">
-<<<<<<< HEAD
+
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\Lo Linh Chi\Desktop\javaimg\user.png"/>
             </Property>
           </Properties>
-=======
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="homeUserMouseClicked"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="homeProduct">
-<<<<<<< HEAD
+
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\Lo Linh Chi\Desktop\javaimg\product.png"/>
             </Property>
           </Properties>
-=======
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="homeProductMouseClicked"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="homeOrder">
-<<<<<<< HEAD
+
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\Lo Linh Chi\Desktop\javaimg\order.png"/>
             </Property>
           </Properties>
-=======
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="homeOrderMouseClicked"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="homeCategory">
-<<<<<<< HEAD
+
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\Lo Linh Chi\Desktop\javaimg\category.png"/>
             </Property>
           </Properties>
-=======
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="homeCategoryMouseClicked"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="homeCustomer">
-<<<<<<< HEAD
+
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\Lo Linh Chi\Desktop\javaimg\customer.png"/>
             </Property>
           </Properties>
-=======
->>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="homeCustomerMouseClicked"/>
           </Events>
