@@ -1,16 +1,13 @@
-<<<<<<< HEAD
-
-=======
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
+
 package view;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-<<<<<<< HEAD
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -24,7 +21,7 @@ public class Order extends javax.swing.JFrame {
         SelectProduct(); 
     }
         Connection Con = null;
-=======
+}
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -55,7 +52,6 @@ public class Order extends javax.swing.JFrame {
     }
 
     Connection Con = null;
->>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
     Statement St = null;
     ResultSet Rs = null;
     public void SelectProduct(){
@@ -63,9 +59,9 @@ public class Order extends javax.swing.JFrame {
         Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
         St = Con.createStatement();
         Rs = St.executeQuery("select * from PRODUCTTBL");
-<<<<<<< HEAD
+
         ProductTable.setModel(DbUtils.resultSetToTableModel(Rs));
-=======
+
         ProductTable2.setModel(DbUtils.resultSetToTableModel(Rs));
 >>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
         
@@ -872,14 +868,14 @@ public class Order extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_QtytbActionPerformed
 
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {                                     
 
         System.exit(0);
-    }//GEN-LAST:event_jLabel2MouseClicked
+    }                                    
 
-    private void ProductTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProductTable2MouseClicked
+    private void ProductTable2MouseClicked(java.awt.event.MouseEvent evt) {                                           
         // TODO add your handling code here:
-    }//GEN-LAST:event_ProductTable2MouseClicked
+    }                                          
 =======
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
@@ -893,7 +889,7 @@ public class Order extends javax.swing.JFrame {
 
         pack();
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
 
