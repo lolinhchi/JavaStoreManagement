@@ -45,6 +45,11 @@ public class LoadFirst extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 0, 51));
         jLabel2.setText("MAFIA");
 
+<<<<<<< HEAD
+        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\Công nghệ thông tin\\java\\logo.png")); // NOI18N
+
+=======
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
         MyProgress.setBackground(new java.awt.Color(255, 0, 51));
         MyProgress.setForeground(new java.awt.Color(255, 0, 0));
 
@@ -62,11 +67,15 @@ public class LoadFirst extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
+                .addGap(18, 18, 18)
+=======
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
                 .addComponent(jLabel2)
-                .addGap(155, 155, 155))
+                .addGap(191, 191, 191))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -84,14 +93,23 @@ public class LoadFirst extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+<<<<<<< HEAD
+                        .addGap(88, 88, 88)
+                        .addComponent(jLabel2))
+=======
                         .addGap(69, 69, 69)
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
+                        .addGap(52, 52, 52)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+<<<<<<< HEAD
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+=======
                 .addGap(18, 18, 18)
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
                 .addComponent(Percentage)
                 .addGap(30, 30, 30)
                 .addComponent(MyProgress, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE))

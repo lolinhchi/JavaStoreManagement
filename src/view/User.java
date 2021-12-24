@@ -332,9 +332,12 @@ public void SelectUser(){
             JOptionPane.showMessageDialog(this, "Missing object to update");
         }
         else{
+            DefaultTableModel model = (DefaultTableModel)UserTable.getModel();
+            int myIndex = UserTable.getSelectedRow();
+            String oldPhone = model.getValueAt(myIndex, 2).toString();
             try {
-                String upDateQuery = "Update User1.USERTBL set UNAME='"+userName.getText()+"'" + ",UPASS='"+passWord.getText() +"'"
-                + "where UPHONE='"+ phone.getText() +"'";
+                String upDateQuery = "Update User1.USERTBL set UNAME='"+userName.getText()+"'" + ",UPASS='"+passWord.getText() +"'" +",UPHONE='" + phone.getText() +"'"
+                + "where UPHONE='"+ oldPhone +"'";
                 conn.updateData(upDateQuery);
                 JOptionPane.showMessageDialog(this, "User edited successfully");
                 SelectUser();
@@ -342,7 +345,7 @@ public void SelectUser(){
                 e.printStackTrace();
             }
         }
-    }                                      
+    }                                                     
 
     private void DeleteBtnMouseClicked(java.awt.event.MouseEvent evt) {                                       
 

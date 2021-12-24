@@ -1,14 +1,63 @@
+<<<<<<< HEAD
+=======
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+dpackage view;
+=======
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
+<<<<<<< HEAD
+
+=======
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
+>>>>>>> 54f3798e12d6380c62d384a48dcfc30dfdfd8131
 package view;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+<<<<<<< HEAD
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+public class Order extends javax.swing.JFrame {
+
+   
+    public Order() {
+        initComponents();
+        SelectProduct(); 
+    }
+        Connection Con = null;
+}
+=======
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Vector;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Vector;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+>>>>>>> 689207b2cdec0d48e1368d3d9be811d2b97758df
+>>>>>>> 54f3798e12d6380c62d384a48dcfc30dfdfd8131
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import net.proteanit.sql.DbUtils;
@@ -67,6 +116,94 @@ private void update(){
                 e.printStackTrace();
             }
 }
+<<<<<<< HEAD
+=======
+=======
+/**
+ *
+ * @author Lo Linh Chi
+ */
+public class Order extends javax.swing.JFrame {
+
+    /**
+     * Creates new form Order
+     */
+    public Order() {
+        initComponents();
+        SelectProduct();
+        SelectCustomer();
+        GetToDay();
+    }
+
+    Connection Con = null;
+<<<<<<< HEAD
+    Statement St = null;
+    ResultSet Rs = null;
+    public void SelectProduct(){
+    try {
+        Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
+        St = Con.createStatement();
+        Rs = St.executeQuery("select * from PRODUCTTBL");
+
+        ProductTable.setModel(DbUtils.resultSetToTableModel(Rs));
+
+        ProductTable2.setModel(DbUtils.resultSetToTableModel(Rs));
+>>>>>>> e0da662 (Create ConnectionDB.java + add, edit, delete button on Product form)
+        
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+=======
+
+    Statement St = null;
+    ResultSet Rs = null;
+    public void SelectProduct(){
+//    try {
+//        Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
+//        St = Con.createStatement();
+//        Rs = St.executeQuery("select * from PRODUCTTBL");
+//
+//        ProductTable.setModel(DbUtils.resultSetToTableModel(Rs));
+//
+//        ProductTable2.setModel(DbUtils.resultSetToTableModel(Rs));
+//        
+//    } catch (SQLException e) {
+//        e.printStackTrace();
+//    }
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
+}
+    public void SelectCustomer(){
+    try {
+        Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
+        St = Con.createStatement();
+        Rs = St.executeQuery("select * from CUSTOMERTBL");
+        CustomerTable2.setModel(DbUtils.resultSetToTableModel(Rs));
+        
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+}
+    private void GetToDay(){
+        DateTimeFormatter dft = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDateTime now = LocalDateTime.now();
+        Datelbl.setText(dft.format(now));
+    }
+    private void Update(){
+        int newQty = oldQty - Integer.valueOf(Qtyfield.getText());
+        try {
+                Con = DriverManager.getConnection("jdbc:derby://localhost:1527/StoreDB","User1","12345");
+                String upDateQuery = "Update User1.PRODUCTTBL set PRODQTY="+newQty+ " where PRODID="+ productID;
+                Statement add = Con.createStatement();
+                add.executeUpdate(upDateQuery);
+                //JOptionPane.showMessageDialog(this, "Category edited successfully");
+                SelectProduct();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+    }
+>>>>>>> 689207b2cdec0d48e1368d3d9be811d2b97758df
+>>>>>>> 54f3798e12d6380c62d384a48dcfc30dfdfd8131
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -602,12 +739,117 @@ private void update(){
         // TODO add your handling code here:
     }//GEN-LAST:event_QtytbActionPerformed
 
+<<<<<<< HEAD
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
 
         System.exit(0);
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void BillTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BillTableMouseClicked
+=======
+    private void QtytbActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+<<<<<<< HEAD
+    }//GEN-LAST:event_QtytbActionPerformed
+
+=======
+    }                                     
+                                                       
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {                                     
+
+        System.exit(0);
+    }                                    
+<<<<<<< HEAD
+
+    private void ProductTable2MouseClicked(java.awt.event.MouseEvent evt) {                                           
+        // TODO add your handling code here:
+    }                                          
+=======
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        pack();
+        setLocationRelativeTo(null);
+    }// </editor-fold>                        
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+
+        System.exit(0);
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void HomeBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeBtnMouseClicked
+=======
+
+    private void HomeBtnMouseClicked(java.awt.event.MouseEvent evt) {                                     
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
+        new HomeForm().setVisible(true);
+        this.dispose();
+    }                                    
+
+    private void CustomerTable2MouseClicked(java.awt.event.MouseEvent evt) {                                            
+        DefaultTableModel model = (DefaultTableModel)CustomerTable2.getModel();
+        int myIndex = CustomerTable2.getSelectedRow();
+        //CusID.setText(model.getValueAt(myIndex, 0).toString());
+        Custnamelbl.setText(model.getValueAt(myIndex, 1).toString());
+        //CusPhone.setText(model.getValueAt(myIndex, 2).toString());
+    }                                           
+
+    int i = 1, price, total=0, sum;
+    String proName;
+    private void AddtoOrderBtnMouseClicked(java.awt.event.MouseEvent evt) {                                           
+        if(flag ==0|| Qtyfield.getText().isEmpty()|| Price.getText().isEmpty()){
+            JOptionPane.showMessageDialog(this, "Select Product and enter quantity");
+        }
+        else{
+        price = Integer.valueOf(Price.getText());
+        total = price * Integer.valueOf(Qtyfield.getText());
+        Vector v = new Vector();
+        v.add(i);
+        v.add(proName);
+        v.add(Qtyfield.getText());
+        v.add(price);
+        v.add(total);
+        DefaultTableModel dt = (DefaultTableModel)BillTable.getModel();
+        dt.addRow(v);
+        sum = sum + total;
+        sumlb.setText(""+sum);
+        Update();
+        i++;
+        
+        }
+    }                                          
+
+    int flag = 0, productID, oldQty;
+    private void ProductTable2MouseClicked(java.awt.event.MouseEvent evt) {                                           
+        DefaultTableModel model = (DefaultTableModel)ProductTable2.getModel();
+        int myIndex = ProductTable2.getSelectedRow();
+        //orderID.setText(model.getValueAt(myIndex, 0).toString());
+        productID = Integer.valueOf(model.getValueAt(myIndex, 0).toString());
+        proName = model.getValueAt(myIndex, 1).toString();
+        oldQty=Integer.valueOf(model.getValueAt(myIndex, 2).toString());
+        //ProdDesc.setText(model.getValueAt(myIndex, 3).toString());
+        flag =1;
+    }                                          
+
+    private void printBtnMouseClicked(java.awt.event.MouseEvent evt) {                                      
+        try {
+            BillTable.print();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }                                     
+
+<<<<<<< HEAD
+    private void BillTbMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BillTbMouseClicked
+>>>>>>> 54f3798e12d6380c62d384a48dcfc30dfdfd8131
         // TODO add your handling code here:
     }//GEN-LAST:event_BillTableMouseClicked
 

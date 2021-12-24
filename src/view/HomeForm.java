@@ -43,6 +43,7 @@ public class HomeForm extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         logOutBtn = new javax.swing.JButton();
+        homeCategory1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -96,9 +97,12 @@ public class HomeForm extends javax.swing.JFrame {
         );
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
         homeUser.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\user.png")); // NOI18N
 =======
 >>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
         homeUser.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeUserMouseClicked(evt);
@@ -106,9 +110,13 @@ public class HomeForm extends javax.swing.JFrame {
         });
 
 <<<<<<< HEAD
+        homeProduct.setIcon(new javax.swing.ImageIcon("D:\\Công nghệ thông tin\\java\\product.png")); // NOI18N
+=======
+<<<<<<< HEAD
         homeProduct.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\product.png")); // NOI18N
 =======
 >>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
         homeProduct.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeProductMouseClicked(evt);
@@ -116,9 +124,13 @@ public class HomeForm extends javax.swing.JFrame {
         });
 
 <<<<<<< HEAD
+        homeOrder.setIcon(new javax.swing.ImageIcon("D:\\Công nghệ thông tin\\java\\order.png")); // NOI18N
+=======
+<<<<<<< HEAD
         homeOrder.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\order.png")); // NOI18N
 =======
 >>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
         homeOrder.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeOrderMouseClicked(evt);
@@ -126,9 +138,13 @@ public class HomeForm extends javax.swing.JFrame {
         });
 
 <<<<<<< HEAD
+        homeCategory.setIcon(new javax.swing.ImageIcon("D:\\Công nghệ thông tin\\java\\category.png")); // NOI18N
+=======
+<<<<<<< HEAD
         homeCategory.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\category.png")); // NOI18N
 =======
 >>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
         homeCategory.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeCategoryMouseClicked(evt);
@@ -136,9 +152,13 @@ public class HomeForm extends javax.swing.JFrame {
         });
 
 <<<<<<< HEAD
+        homeCustomer.setIcon(new javax.swing.ImageIcon("D:\\Công nghệ thông tin\\java\\customer.png")); // NOI18N
+=======
+<<<<<<< HEAD
         homeCustomer.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lo Linh Chi\\Desktop\\javaimg\\customer.png")); // NOI18N
 =======
 >>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
         homeCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 homeCustomerMouseClicked(evt);
@@ -193,6 +213,13 @@ public class HomeForm extends javax.swing.JFrame {
             }
         });
 
+        homeCategory1.setIcon(new javax.swing.ImageIcon("D:\\Công nghệ thông tin\\java\\user.png")); // NOI18N
+        homeCategory1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                homeCategory1MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -204,22 +231,26 @@ public class HomeForm extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(homeUser)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(homeCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 564, Short.MAX_VALUE)
-                                        .addComponent(homeOrder, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(10, 10, 10)
+                                        .addComponent(jLabel10))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(homeUser)
-                                            .addComponent(jLabel10))))
-                                .addGap(109, 109, 109))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(homeCategory1)))
+                                .addGap(105, 105, 105))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(610, 610, 610)
-                                .addComponent(jLabel12)
-                                .addContainerGap())))
+                                .addComponent(homeCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(564, 564, 564)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel12)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addComponent(homeOrder, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addContainerGap(97, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.LEADING)
@@ -251,8 +282,10 @@ public class HomeForm extends javax.swing.JFrame {
                     .addComponent(jLabel10)
                     .addComponent(jLabel11))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(homeUser)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(homeUser)
+                    .addComponent(homeCategory1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addComponent(jLabel9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(homeCategory, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -326,12 +359,19 @@ public class HomeForm extends javax.swing.JFrame {
     }//GEN-LAST:event_logOutBtnMouseClicked
 
 <<<<<<< HEAD
+    private void homeCategory1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_homeCategory1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_homeCategory1MouseClicked
+
+=======
+<<<<<<< HEAD
 =======
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
         // T add your handling code here:
     }//GEN-LAST:event_jLabel9MouseClicked
 
 >>>>>>> 366a366458fe3a7f207a9e319724701f7697a882
+>>>>>>> df28601a58a0a9da68f94cb05a15453f6fa12ce4
     /**
      * @param args the command line arguments
      */
@@ -369,6 +409,7 @@ public class HomeForm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel homeCategory;
+    private javax.swing.JLabel homeCategory1;
     private javax.swing.JLabel homeCustomer;
     private javax.swing.JLabel homeOrder;
     private javax.swing.JLabel homeProduct;
